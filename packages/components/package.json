@@ -1,0 +1,36 @@
+{
+  "name": "@drofens/components",
+  "version": "1.0.0",
+  "description": "Server components by Drofens",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "ndev": "next dev",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external next",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external next --watch",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "10.4.14",
+    "postcss": "8.4.14",
+    "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "@drofens/eslint-config": "*",
+    "@drofens/tokens": "*",
+    "@drofens/ts-config": "*",
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/node": "20.2.4",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "tsup": "^6.7.0",
+    "next": "13.4.4",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4"
+  }
+}
