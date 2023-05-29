@@ -8,7 +8,7 @@
   "scripts": {
     "ndev": "next dev",
     "build": "tsup src/index.tsx --format esm,cjs --dts --external next",
-    "dev": "tsup src/index.tsx --format esm,cjs --dts --external next --watch",
+    "dev": "next dev && tsup src/index.tsx --format esm,cjs --dts --external next --watch",
     "start": "next start",
     "lint": "next lint"
   },
