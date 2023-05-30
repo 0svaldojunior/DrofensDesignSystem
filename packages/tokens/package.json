@@ -1,11 +1,10 @@
 {
   "name": "@drofens/tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tokens configuration by Drofens",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",

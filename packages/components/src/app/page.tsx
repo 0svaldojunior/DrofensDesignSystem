@@ -1,4 +1,5 @@
 import { Button } from './components/Button'
+import { UseButton } from './components/UseButton'
 
 export default function Home() {
   return (
@@ -15,9 +16,7 @@ export default function Home() {
       <Button variant="WARNING" isOutline={false} disabled={true}>
         WARNING
       </Button>
-      <Button variant="blue" isOutline={false} disabled={false}>
-        blue
-      </Button>
+      <UseButton />
       <Button variant="cyan" isOutline={false} disabled={true}>
         cyan
       </Button>

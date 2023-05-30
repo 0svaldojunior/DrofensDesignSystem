@@ -1,6 +1,6 @@
 {
   "name": "@drofens/components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Server components by Drofens",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

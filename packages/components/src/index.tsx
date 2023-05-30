@@ -1,3 +1,1 @@
-/* eslint-disable prettier/prettier */
-export * from './app/components/Button';
-
+export * from './app/components/Button'

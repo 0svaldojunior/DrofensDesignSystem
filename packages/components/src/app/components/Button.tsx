@@ -1,7 +1,11 @@
+'use client'
+
 import { colors } from '@drofens/tokens'
 import { ReactNode } from 'react'
+import { HTMLButton } from '../../types'
+import { MinWidth } from '../utils'
 
-interface ButtonProps {
+interface ButtonProps extends HTMLButton {
   children?: ReactNode
   isOutline?: boolean
   disabled?: boolean
@@ -26,6 +30,7 @@ export function Button({
   disabled = false,
   width = 10,
   variant = 'DEFAULT',
+  ...rest
 }: ButtonProps) {
   function setOutline(): string {
     if (isOutline) {
@@ -35,9 +40,7 @@ export function Button({
     } else return '!text-gray-50 border-transparent'
   }
 
-  function setMinWidth() {
-    return '!min-w-[' + width + 'rem]'
-  }
+  const minWidth = MinWidth(width)
 
   const outline = setOutline()
 
@@ -62,9 +65,10 @@ export function Button({
   return (
     <button
       className={`${variants[variant]} ${isDisabled} ${outline} rounded border-4 border-solid transition duration-[250ms] focus:shadow[0_0_0_2px_${colors.gray[100]}] ${variants[variant]}`}
+      {...rest}
     >
       <div
-        className={`box-border flex ${setMinWidth()} items-center justify-center gap-2 rounded p-4 text-center text-2xl font-bold`}
+        className={`box-border flex ${minWidth} items-center justify-center gap-2 rounded p-4 text-center text-2xl font-bold`}
       >
         {children}
       </div>

@@ -1,5 +1,5 @@
 
-> @drofens/components@1.0.0 build
+> @drofens/components@1.0.1 build
 > tsup src/index.tsx --format esm,cjs --dts --external next
 
 CLI Building entry: src/index.tsx
@@ -8,10 +8,10 @@ CLI tsup v6.7.0
 CLI Target: es6
 ESM Build start
 CJS Build start
-ESM dist/index.mjs 124.28 KB
-ESM ⚡️ Build success in 35ms
-CJS dist/index.js 124.72 KB
-CJS ⚡️ Build success in 35ms
+ESM dist/index.mjs 128.96 KB
+ESM ⚡️ Build success in 39ms
+CJS dist/index.js 129.41 KB
+CJS ⚡️ Build success in 39ms
 DTS Build start
-DTS ⚡️ Build success in 967ms
-DTS dist/index.d.ts 259.00 B
+DTS ⚡️ Build success in 987ms
+DTS dist/index.d.ts 483.00 B

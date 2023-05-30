@@ -1,13 +1,7 @@
-# @drofens/eslint-config
+# @drofens/ts-config
 
 ## 1.0.1
 
 ### Patch Changes
 
 - Add other packages, changes old packages and finished v1.0 of Button
-
-## 1.0.1
-
-### Patch Changes
-
-- Finished eslint config

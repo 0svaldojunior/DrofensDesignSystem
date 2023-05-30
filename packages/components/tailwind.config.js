@@ -14,7 +14,7 @@ module.exports = {
       fontSize,
       lineHeight,
       borderRadius,
-    }
+    },
   },
   plugins: [require('@tailwindcss/forms')],
 }
