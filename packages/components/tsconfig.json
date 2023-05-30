@@ -1,19 +1,4 @@
 {
   "extends": "@drofens/ts-config/react.json",
-  "include": [
-    "src",
-    ".next/types/**/*.ts"
-  ],
-  "compilerOptions": {
-    "allowJs": true,
-    "noEmit": true,
-    "incremental": true,
-    "resolveJsonModule": true,
-    "jsx": "preserve",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  }
+  "include": ["src"]
 }

@@ -1,11 +1,73 @@
-import { ChildrenReactNode } from '../interface/ChildrenReactNode'
+import { colors } from '@drofens/tokens'
+import { ReactNode } from 'react'
 
-export function Button({ children }: ChildrenReactNode) {
+interface ButtonProps {
+  children?: ReactNode
+  isOutline?: boolean
+  disabled?: boolean
+  width?: number
+  variant?:
+    | 'DEFAULT'
+    | 'DANGER'
+    | 'WARNING'
+    | 'DISABLED'
+    | 'yellow'
+    | 'green'
+    | 'teal'
+    | 'blue'
+    | 'cyan'
+    | 'purple'
+    | 'pink'
+}
+
+export function Button({
+  children,
+  isOutline = false,
+  disabled = false,
+  width = 10,
+  variant = 'DEFAULT',
+}: ButtonProps) {
+  function setOutline(): string {
+    if (isOutline) {
+      if (variant === 'DISABLED') {
+        return '!bg-transparent !text-gray-300'
+      } else return '!bg-transparent'
+    } else return '!text-gray-50 border-transparent'
+  }
+
+  function setMinWidth() {
+    return '!min-w-[' + width + 'rem]'
+  }
+
+  const outline = setOutline()
+
+  const isDisabled = disabled
+    ? 'cursor-not-allowed hover:brightness-100'
+    : 'cursor-pointer hover:brightness-125'
+
+  const variants = {
+    DEFAULT: 'bg-gray text-gray border-gray',
+    DANGER: 'bg-red text-red border-red',
+    WARNING: 'bg-orange text-orange border-orange',
+    DISABLED: 'bg-gray-300 text-gray-50 border-gray-300',
+    yellow: 'bg-yellow text-yellow border-yellow',
+    green: 'bg-green text-green border-green',
+    teal: 'bg-teal text-teal border-teal',
+    blue: 'bg-blue text-blue border-blue',
+    cyan: 'bg-cyan text-cyan border-cyan',
+    purple: 'bg-purple text-purple border-purple',
+    pink: 'bg-pink text-pink border-pink',
+  }
+
   return (
-    <div className="">
-      <button className="rounded-lg bg-purple-500 px-8 py-3 text-xl font-bold text-gray-50">
-        {children}ola
-      </button>
-    </div>
+    <button
+      className={`${variants[variant]} ${isDisabled} ${outline} rounded border-4 border-solid transition duration-[250ms] focus:shadow[0_0_0_2px_${colors.gray[100]}] ${variants[variant]}`}
+    >
+      <div
+        className={`box-border flex ${setMinWidth()} items-center justify-center gap-2 rounded p-4 text-center text-2xl font-bold`}
+      >
+        {children}
+      </div>
+    </button>
   )
 }

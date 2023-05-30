@@ -1,4 +1,4 @@
 export const fontFamily = {
-  default: 'Roboto, sans-serif',
+  roboto: 'Roboto, sans-serif',
   code: 'Roboto Mono, monospace',
 }

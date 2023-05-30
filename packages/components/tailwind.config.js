@@ -1,4 +1,4 @@
-import { colors, fontFamily, fontSize, lineHeight } from '@drofens/tokens'
+import { borderRadius, colors, fontFamily, fontSize, lineHeight } from '@drofens/tokens'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,10 +8,13 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors,
-    fontFamily,
-    fontSize,
-    lineHeight,
+    extend: {
+      colors,
+      fontFamily,
+      fontSize,
+      lineHeight,
+      borderRadius,
+    }
   },
   plugins: [require('@tailwindcss/forms')],
 }
