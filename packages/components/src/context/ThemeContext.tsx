@@ -1,30 +1,30 @@
 'use client'
 
 import Cookies from 'js-cookie'
-import { ReactNode, createContext, useContext, useEffect, useState } from 'react'
+import React from 'react'
 
 interface ThemeContextType {
   theme: boolean
   handleSwitchTheme: () => void
 }
 
-export const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType)
+export const ThemeContext = React.createContext<ThemeContextType>({} as ThemeContextType)
 
 interface ThemeProviderProps {
-  children: ReactNode
+  children: React.ReactNode
 }
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  const [theme, setTheme] = useState(true)
+  const [theme, setTheme] = React.useState(true)
 
   const currentDate = new Date()
   currentDate.setDate(currentDate.getDate() + 365)
 
-  useEffect(() => {
+  React.useEffect(() => {
     setTheme(Cookies.get('_theme') === 'dark')
   }, [])
 
-  useEffect(() => {
+  React.useEffect(() => {
     Cookies.set('_theme', theme ? 'dark' : '', { expires: currentDate })
   }, [theme])
 
@@ -38,5 +38,5 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 }
 
 export function useTheme() {
-  return useContext(ThemeContext)
+  return React.useContext(ThemeContext)
 }

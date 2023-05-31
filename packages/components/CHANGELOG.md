@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.7
+
+### Patch Changes
+
+- 3f57d77: fix: tsup config
+
 ## 1.2.6
 
 ### Patch Changes

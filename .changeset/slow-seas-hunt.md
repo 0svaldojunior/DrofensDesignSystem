@@ -2,4 +2,4 @@
 "@drofens/components": patch
 ---
 
-fix: tsup config
+fix: change imports from React
