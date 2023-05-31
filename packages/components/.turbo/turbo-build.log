@@ -1,18 +1,33 @@
 
-> @drofens/components@1.2.5 build
+> @drofens/components@1.2.6 build
 > tsup src/index.tsx --format esm,cjs --dts
 
 CLI Building entry: src/index.tsx
 CLI Using tsconfig: tsconfig.json
 CLI tsup v6.7.0
-CLI Using tsup config: /home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/packages/components/tsup.config.json
+CLI Using tsup config: /home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/packages/components/tsup.config.js
 CLI Target: node14
 ESM Build start
 CJS Build start
-CJS dist/index.js 18.54 KB
-CJS ⚡️ Build success in 25ms
-ESM dist/index.mjs 18.28 KB
-ESM ⚡️ Build success in 25ms
+ESM dist/index.mjs     15.88 KB
+ESM dist/index.mjs.map 46.42 KB
+ESM ⚡️ Build success in 28ms
+Error parsing: undefined:3:10
+SyntaxError: Error transforming /home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/packages/components/dist/index.js: Unexpected token (3:10)
+    at unexpected (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/util.js:99:15)
+    at parseExprAtom (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/expression.js:594:24)
+    at parseExprSubscripts (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+    at parseMaybeUnary (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+    at parseExprOps (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+    at parseMaybeConditional (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+    at baseParseMaybeAssign (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+    at parseMaybeAssign (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/expression.js:125:12)
+    at parseExpression (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/expression.js:104:3)
+    at parseReturnStatement (/home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/node_modules/sucrase/dist/parser/traverser/statement.js:409:33)
 DTS Build start
-DTS ⚡️ Build success in 1307ms
+DTS ⚡️ Build success in 1293ms
 DTS dist/index.d.ts 5.61 KB
+npm ERR! Lifecycle script `build` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: @drofens/components@1.2.6 
+npm ERR!   at location: /home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/packages/components 

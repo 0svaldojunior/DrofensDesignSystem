@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.6
+
+### Patch Changes
+
+- d339894: fix: tsup.config.js
+
 ## 1.2.5
 
 ### Patch Changes
