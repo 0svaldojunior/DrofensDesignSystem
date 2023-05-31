@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.4
+
+### Patch Changes
+
+- 26ca85d: fix: add export to ThemeRoot on components index
+
 ## 1.2.3
 
 ### Patch Changes
