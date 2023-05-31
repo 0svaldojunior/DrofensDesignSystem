@@ -15,6 +15,7 @@ interface ButtonProps extends HTMLButton {
     | 'DANGER'
     | 'WARNING'
     | 'DISABLED'
+    | 'OutlineNone'
     | 'yellow'
     | 'green'
     | 'teal'
@@ -33,7 +34,9 @@ export function Button({
   ...rest
 }: ButtonProps) {
   function setOutline(): string {
-    if (isOutline) {
+    if (variant === 'OutlineNone') {
+      return 'text-gray-900 dark:text-gray-50'
+    } else if (isOutline) {
       if (variant === 'DISABLED') {
         return '!bg-transparent !text-gray-300'
       } else return '!bg-transparent'
@@ -53,6 +56,7 @@ export function Button({
     DANGER: 'bg-red text-red border-red',
     WARNING: 'bg-orange text-orange border-orange',
     DISABLED: 'bg-gray-300 text-gray-50 border-gray-300',
+    OutlineNone: 'bg-transparent border-transparent',
     yellow: 'bg-yellow text-yellow border-yellow',
     green: 'bg-green text-green border-green',
     teal: 'bg-teal text-teal border-teal',

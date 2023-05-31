@@ -1,5 +1,7 @@
 import { Roboto_Flex as Roboto } from 'next/font/google'
 import { ReactNode } from 'react'
+import { ThemeProvider } from '../context'
+import { ThemeLayout } from './components/ThemeLayout'
 import './globals.css'
 
 interface RootLayoutProps {
@@ -13,10 +15,12 @@ export const metadata = {
   description: 'Server Components Created by Drofens',
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function Layout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body className={`${roboto.variable} bg-gray-900`}>{children}</body>
-    </html>
+    <ThemeProvider>
+      <html lang="en">
+        <ThemeLayout otherClass={`${roboto.variable} dark:bg-gray-900`}>{children}</ThemeLayout>
+      </html>
+    </ThemeProvider>
   )
 }
