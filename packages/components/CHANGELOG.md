@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.2
+
+### Patch Changes
+
+- 837221e: Fix: layout
+
 ## 1.2.1
 
 ### Patch Changes
