@@ -34,7 +34,7 @@ export const colors = {
 
   // Gray
   gray: {
-    50: '#DFDFDF',
+    50: '#F8F8F8',
     100: '#CFCFCF',
     200: '#BFBFBF',
     300: '#AEAEAE',
