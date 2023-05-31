@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.1
+
+### Patch Changes
+
+- fix: change package and tsconfig | add: class dark to background on main page
+
 ## 1.2.0
 
 ### Minor Changes

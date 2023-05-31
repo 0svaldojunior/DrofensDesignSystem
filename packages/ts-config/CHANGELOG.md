@@ -1,5 +1,11 @@
 # @drofens/ts-config
 
+## 1.0.4
+
+### Patch Changes
+
+- fix: change compiler options
+
 ## 1.0.3
 
 ### Patch Changes
