@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.3
+
+### Patch Changes
+
+- 4e068d0: add: component ThemeRoot to use on main layout
+
 ## 1.2.2
 
 ### Patch Changes

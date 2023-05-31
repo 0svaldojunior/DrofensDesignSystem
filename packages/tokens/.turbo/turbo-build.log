@@ -11,7 +11,7 @@ CJS Build start
 CJS dist/index.js 20.89 KB
 CJS ⚡️ Build success in 18ms
 ESM dist/index.mjs 19.74 KB
-ESM ⚡️ Build success in 18ms
+ESM ⚡️ Build success in 19ms
 DTS Build start
-DTS ⚡️ Build success in 864ms
+DTS ⚡️ Build success in 917ms
 DTS dist/index.d.ts 18.26 KB
