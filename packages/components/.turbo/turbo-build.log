@@ -1,17 +1,18 @@
 
-> @drofens/components@1.2.4 build
-> tsup src/index.tsx --format esm,cjs --dts --external react,react-dom,next
+> @drofens/components@1.2.5 build
+> tsup src/index.tsx --format esm,cjs --dts
 
 CLI Building entry: src/index.tsx
 CLI Using tsconfig: tsconfig.json
 CLI tsup v6.7.0
-CLI Target: es6
+CLI Using tsup config: /home/aquarian-pc/Insync/app.o.r.jr@gmail.com/Google Drive/Business/Developer/DrofensDesignSystem/packages/components/tsup.config.json
+CLI Target: node14
 ESM Build start
 CJS Build start
-ESM dist/index.mjs 16.68 KB
-ESM ⚡️ Build success in 24ms
-CJS dist/index.js 18.59 KB
-CJS ⚡️ Build success in 24ms
+CJS dist/index.js 18.54 KB
+CJS ⚡️ Build success in 25ms
+ESM dist/index.mjs 18.28 KB
+ESM ⚡️ Build success in 25ms
 DTS Build start
-DTS ⚡️ Build success in 1334ms
+DTS ⚡️ Build success in 1307ms
 DTS dist/index.d.ts 5.61 KB

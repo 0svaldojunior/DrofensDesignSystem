@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.5
+
+### Patch Changes
+
+- f86829e: add/fix: tsup.config to change require to import by useState
+
 ## 1.2.4
 
 ### Patch Changes
