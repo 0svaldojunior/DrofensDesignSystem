@@ -1,5 +1,5 @@
 
-> @drofens/tokens@1.1.0 build
+> @drofens/tokens@1.1.1 build
 > tsup src/index.ts --format esm,cjs --dts
 
 CLI Building entry: src/index.ts
@@ -9,9 +9,9 @@ CLI Target: node14
 ESM Build start
 CJS Build start
 ESM dist/index.mjs 19.74 KB
-ESM ⚡️ Build success in 19ms
+ESM ⚡️ Build success in 22ms
 CJS dist/index.js 20.89 KB
-CJS ⚡️ Build success in 19ms
+CJS ⚡️ Build success in 22ms
 DTS Build start
-DTS ⚡️ Build success in 918ms
+DTS ⚡️ Build success in 822ms
 DTS dist/index.d.ts 18.26 KB

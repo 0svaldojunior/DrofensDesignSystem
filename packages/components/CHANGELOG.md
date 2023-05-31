@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.0
+
+### Minor Changes
+
+- Add: buttomTheme, Box, Theme(Context with Layout)
+
 ## 1.1.0
 
 ### Minor Changes

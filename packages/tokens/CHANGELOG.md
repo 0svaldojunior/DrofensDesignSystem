@@ -1,5 +1,11 @@
 # @drofens/tokens
 
+## 1.1.1
+
+### Patch Changes
+
+- fix: change little warnings
+
 ## 1.1.0
 
 ### Minor Changes

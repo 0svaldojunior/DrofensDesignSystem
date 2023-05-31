@@ -7,13 +7,13 @@
   "compilerOptions": {
     "allowJs": true,
     "noEmit": true,
-    "incremental": true,
     "resolveJsonModule": true,
     "jsx": "preserve",
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "incremental": true
   }
 }

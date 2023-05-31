@@ -1,5 +1,11 @@
 # @drofens/ts-config
 
+## 1.0.3
+
+### Patch Changes
+
+- fix: change little warnings
+
 ## 1.0.2
 
 ### Patch Changes
