@@ -1,20 +1,22 @@
 {
   "name": "@drofens/components",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Server components by Drofens",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "tsup": {
-    "entry": ["src/index.ts"],
+    "entry": [
+      "src/index.ts"
+    ],
     "splitting": false,
     "sourcemap": true,
     "clean": true
   },
   "scripts": {
     "dev:next": "next dev",
-    "dev:tsup": "tsup src/index.tsx --format esm,cjs --dts --external react,react-dom,next --watch",
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react,react-dom,next",
+    "dev:tsup": "tsup src/index.tsx --format esm,cjs,iife --dts --external react,react-dom,next --watch",
+    "build": "tsup src/index.tsx --format esm,cjs,iife --dts --external react,react-dom,next",
     "dev": "concurrently \"npm run dev:next\" \"npm run dev:tsup\"",
     "start": "next start",
     "lint": "eslint src/**/*.ts*"

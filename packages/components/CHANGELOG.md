@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- 1283753: fix: change tsup.config to .ts and change package tsup
+
+## 1.2.6
+
+### Patch Changes
+
 - d339894: fix: tsup.config.js
 
 ## 1.2.5
