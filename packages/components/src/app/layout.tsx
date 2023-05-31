@@ -15,7 +15,7 @@ export const metadata = {
   description: 'Server Components Created by Drofens',
 }
 
-export default function Layout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <ThemeProvider>
       <html lang="en">
