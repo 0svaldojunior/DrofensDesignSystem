@@ -9,9 +9,9 @@ CLI Target: node14
 ESM Build start
 CJS Build start
 ESM dist/index.mjs 19.74 KB
-ESM ⚡️ Build success in 20ms
+ESM ⚡️ Build success in 19ms
 CJS dist/index.js 20.89 KB
-CJS ⚡️ Build success in 20ms
+CJS ⚡️ Build success in 19ms
 DTS Build start
-DTS ⚡️ Build success in 900ms
+DTS ⚡️ Build success in 854ms
 DTS dist/index.d.ts 18.26 KB

@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.9
+
+### Patch Changes
+
+- 4503514: fix: change build of bundler
+
 ## 1.2.8
 
 ### Patch Changes
