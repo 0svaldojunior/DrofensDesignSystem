@@ -15,10 +15,12 @@
   },
   "scripts": {
     "dev:next": "next dev",
-    "dev:tsup": "tsup src/index.tsx --format esm,cjs,iife --dts --external react,react-dom,next --watch",
-    "build": "tsup src/index.tsx --format esm,cjs,iife --dts --external react,react-dom,next",
-    "dev": "concurrently \"npm run dev:next\" \"npm run dev:tsup\"",
-    "start": "next start",
+    "dev:webpack": "webpack --watch",
+    "build:webpack": "webpack",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "next build",
+    "dev": "concurrently \"npm run dev:next\" \"npm run dev:webpack\"",
+    "export": "next export",
     "lint": "eslint src/**/*.ts*"
   },
   "license": "MIT",
@@ -43,7 +45,9 @@
     "prettier-plugin-tailwindcss": "^0.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tsup": "^6.7.0",
-    "typescript": "5.0.4"
+    "ts-loader": "^9.4.3",
+    "typescript": "5.0.4",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1"
   }
 }
