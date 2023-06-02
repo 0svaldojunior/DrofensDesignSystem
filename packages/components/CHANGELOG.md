@@ -1,5 +1,11 @@
 # @drofens/components
 
+## 1.2.8
+
+### Patch Changes
+
+- 2e05e7d: fix: change imports from React
+
 ## 1.2.7
 
 ### Patch Changes
